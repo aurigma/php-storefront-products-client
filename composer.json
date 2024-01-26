@@ -1,0 +1,37 @@
+{
+    "name": "aurigma/php-storefront-products-client",
+    "description": "PHP API Client for Storefront Products API service of Customer's Canvas web-to-print system.",
+    "keywords": [
+        "customers canvas",
+        "web-to-print",
+        "api client",
+        "storefront",
+        "products"
+    ],
+    "homepage": "https://customerscanvas.com",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Aurigma Inc",
+            "email": "info@aurigma.com",
+            "homepage": "https://customerscanvas.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "ext-mbstring": "*",
+        "guzzlehttp/guzzle": "^6.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.0 || ^9.0",
+        "friendsofphp/php-cs-fixer": "^2.12"
+    },
+    "autoload": {
+        "psr-4": { "Aurigma\\Storefront\\Products\\" : "lib/" }
+    },
+    "autoload-dev": {
+        "psr-4": { "Aurigma\\Storefront\\Products\\Test\\" : "test/" }
+    }
+}
